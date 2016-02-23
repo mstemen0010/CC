@@ -1,0 +1,110 @@
+#include <fstream.h>
+#include <stdio.h>
+#include "utils/mstring.h"
+#include "utils/table.h"
+
+int main()
+{
+	mstring buffer;
+	mstring value, name;
+	int  totalItems = 0;
+	char input[BUFSIZ];
+	int  firstLine = TRUE;
+
+	fstream in("tf.dat", ios::in);
+	fstream out("tf.xls", ios::out);
+	table  tempTable("tf.template", 0);
+	
+	int total_lines = tempTable.numRows() - 1;
+
+	
+	int currentItemCount = -1;
+	mstring currentItem;
+	int pairsStarted = FALSE;
+	int startedPair = FALSE;
+	currentItem = tempTable.getRow(0);
+	while (in.getline(input, BUFSIZ-1))
+	{
+		mstring line, cleanLine;
+		if (currentItemCount > total_lines)
+			currentItemCount = 0;
+		if (input)
+		{
+			line = input;
+			value = input;
+			line = line.rmNonPrint(" ");
+			cleanLine = line.rmNonPrint(" ");
+			mstring lastChar = line.charAtIndex(line.len() - 1);
+			if (lastChar == "=")
+				line += " =";
+			else
+				line += "=";
+			line.delimiter("=");
+			if (line.wcount() == 2)
+			{
+				
+				if (pairsStarted && startedPair)
+					buffer += "\t";
+				line.delimiter(" ");
+				if (! line.wPos("Content-Type:"))
+				{
+					line.delimiter("=");
+					name = line.parse("=");
+					value = line.parse("=");
+					if (tempTable.find(name()))
+					{
+						currentItemCount++;
+						if (currentItemCount > total_lines)
+							currentItemCount = 0;
+						currentItem = tempTable.getRow(currentItemCount);
+						pairsStarted = TRUE;
+						startedPair = TRUE;
+					}
+					if (! value.isBlank())
+					{
+						buffer += value();
+					}
+					else
+					{
+						buffer += "NONE\t";
+						startedPair = FALSE;
+					}
+				}
+			}
+			else if (pairsStarted)
+			{
+				buffer += " ";
+				buffer += cleanLine();
+				buffer += " ";
+			}
+			
+			if (pairsStarted)
+			{
+				while(currentItem != name)
+				{
+					buffer += "NONE\t";
+					currentItemCount++;
+					if (currentItemCount > total_lines)
+						currentItemCount = 0;
+					currentItem = tempTable.getRow(currentItemCount);
+					startedPair = FALSE;
+				}
+
+			}
+			if (currentItemCount >= total_lines)
+			{
+				if (buffer.len())
+					out << buffer() << "\t";
+				out << endl;
+				currentItemCount = -1;
+				startedPair = FALSE;
+				pairsStarted = FALSE;
+				buffer = "";
+				totalItems++;
+			}
+	
+				
+		}
+	}
+}
+

@@ -1,0 +1,90 @@
+#include "tableRow.h"
+#include "tableCell.h"
+
+
+tableRow::tableRow()
+{
+	_empty = true;
+	_numCells = 0;
+}
+tableRow::~tableRow()
+{
+	
+	for (int i = 0; int < _numCells; i++)
+		delete _cells[i];
+}
+void tableRow::append()
+{
+	tableCell _cell[_numCells] = new tableCell();
+	_numCells++;
+	_empty = false;
+}
+void tableRow::append(mstring val)
+{
+	tableCell _cell[_numCells] = new tableCell(val);
+	_numCells++;
+	_empty = false;
+}
+void tableRow::cellValue(int cellNum, mstring newCellVal)
+{
+	if (cellNum < _numCells)
+		_cells[cellNum]->value(newCellVal)
+}
+mstring tableRow::cellValue(int cellNum)
+{
+	if (cellNum < _numCells)
+		return _cells[cellNum]->value();
+}
+bool tableRow::find(mstring target)
+{
+	bool found = false;
+	for (int i = 0; i < _numCells; i++)
+	{
+
+		mstring tval = _cells[i]->value();
+		if (tval == target)
+		{
+			found = true;
+			break;
+		}
+			
+	}
+	return(found);
+}
+bool tableRow::findNoCase(mstring target)
+{
+	bool found = false;
+	for (int i = 0; i < _numCells; i++)
+	{
+
+		mstring tval = _cells[i]->value();
+		if (tval.upper() == target.upper())
+		{
+			found = true;
+			break;
+		}
+			
+	}
+	return(found);
+}
+
+mstring tableRow::get(mstring target)
+{
+	for (int i = 0; i < _numCells; i++)
+	{
+
+		mstring tval = _cells[i]->value();
+		if (tval == target)
+			return(tval);
+	}
+}
+mstring tableRow::getNoCase(mstring target)
+{
+	for (int i = 0; i < _numCells; i++)
+	{
+
+		mstring tval = _cells[i]->value();
+		if (tval.upper() == target.upper())
+			return(tval);
+	}
+}

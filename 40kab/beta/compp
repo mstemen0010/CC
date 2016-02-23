@@ -1,0 +1,1 @@
+g++ table.cc mstring.cc 40kab.cc 40kabio.cc 40kfig.cc 40karmy.cc 40ksquad.cc  40kcdx.cc 40kvehic.cc -o 40kab

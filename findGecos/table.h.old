@@ -1,0 +1,88 @@
+/*
+** File: table.h SCCS 1.2 - 8/4/95
+**
+** Author:   Matthew Stemen
+**
+**
+** 
+** Created:  19 June 1995
+**  
+**
+**
+** Purpose: Monitors and reports any and all remote logins to the 
+**          host it is run from.  This activity is reported either 
+**          using Sound, Images(icons), and Tabular reports or any
+**          combination thereof.
+*/
+
+#ifndef TABLE_H
+#define TABLE_H
+
+#include <stdio.h>
+#include <malloc.h>
+#include <string.h>
+#include <fstream.h>
+#include "mstring.h"
+// #include <stream.h>
+
+#ifndef TRUE
+	#define	TRUE	1
+	#define FALSE	! TRUE
+#endif
+
+
+struct	tableElement 
+{	
+	mstring			value;
+	struct  tableElement	*next;
+	struct	tableElement	*first;
+};
+
+class table
+{
+	public:
+			table();
+			table(int newSize, int hashed);
+			// table(mstring & filename, int hashed);
+			table(mstring * filename, int hashed);
+			table(mstring  filename, int hashed);
+			~table();
+
+			int	find(mstring & key);
+			mstring get(mstring & key);
+			mstring get(int index);
+			mstring get();
+			mstring get(int elementNum, mstring &delimiter);
+			mstring get(int index, int elementNum, mstring &delimiter);
+			int		add(mstring &item);
+			int		numElements();
+			int		hashed();
+			int 		deleteRow(int row);
+
+	private:
+			unsigned 	long	makeHash(mstring & value);
+			int		chain(tableElement * item, mstring &  value);
+			int   	numLines(mstring &fileName);
+			int		build(fstream& file);
+			void	hashed(int value);
+			// numLines();
+
+
+			int		arraySize;
+			int		_numItems;
+			int		_numLines;
+			int		modValue;
+			int		size;
+			int		_hashed;
+
+			struct tableElement**	tbl;
+
+};
+
+inline table::table(){;}
+inline int table::numElements(){ return _numItems;}
+inline void table::hashed(int value) {_hashed = value;}
+inline int table::hashed() {return _hashed;}
+
+#endif
+

@@ -1,0 +1,11 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.INIT:
+	echo "Copyright (c) 1992 by Roadnet Technologies, Inc."
+	echo "Copyright (c) 1992 by United Parcel Service of America."
+	echo "All rights reserved."
+	echo ""
+mstring.o:	/usr/include/errno.h /usr/include/sys/errno.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h mstring.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h /usr/include/string.h /usr/include/ctype.h /usr/include/stdlib.h 
+.BUILT_LAST_MAKE_RUN:
+table.o:	table.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h /usr/include/malloc.h /usr/include/string.h /opt/SUNWspro/SC4.0/include/CC/fstream.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h mstring.h /usr/include/ctype.h /usr/include/stdlib.h 
+	CC    -c  table.cc

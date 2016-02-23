@@ -1,0 +1,8 @@
+CC = CC 
+SYS_LIBRARIES = -lm 
+XCOMM = #
+LOCAL_LIBRARIES = $(XLIB)
+DEPLIBS = $(DEPXLIB)
+SRCS = table.cxx mstring.cxx 40kabio.cxx 40kabfig.cxx 40ksquad.cxx 40kabcdx.cxx 40kvehic.cxx 40karmy.cxx 40kab.cxx 
+OBJS = table.o  mstring.o 40kabio.o 40kabfig.o 40ksquad.o 40kabcdx.o 40kvehic.o 40karmy.o 40kab.o 
+ComplexProgramTarget(40kab)

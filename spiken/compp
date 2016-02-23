@@ -1,0 +1,1 @@
+g++  mstring.cc table.cc daemon.cc spike.cc spikeapp.cc -o spike

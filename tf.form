@@ -1,0 +1,91 @@
+<input type=text size=20 NAME="lastname">
+<input type=text size=20 NAME="firstname">
+<input type=text size=40 NAME="division">
+<input type=text size=40 NAME="position">
+<input type=radio name="employment_status" value="permanent"> 
+<input type=radio name="employment_status" value="temporary">
+<input type=radio name="supervise" value="yes"> 
+<input type=radio name="supervise" value="no"><
+<input type=text size=3 name="number_supervised">
+<input type=checkbox name="attended_diversity">
+<input type=checkbox name="attended_professionalism"> 
+<input type=checkbox name="attended_fss">
+<input type=checkbox name="attended_supervisory_class"> 
+<input type=checkbox name="attended_financialplan"> 
+<input type=checkbox name="attended_selfmgmt"> 
+<input type=checkbox name="attended_grammar"> Grammar Refresher</td>
+<input type=checkbox name="attended_stress"> Stress Management</td>
+<input type=checkbox name="attended_present_skills"> Presentation Skills</td>
+<input type=checkbox name="attended_teambuild"> Team Building</td></TR>
+<input type=checkbox name="attended_prof_dress"> Professional Dress for Women</td>
+<textarea cols=50 rows=8 name="implemented_skills"></textarea><p>
+<input type=text name="rank_diversity" size=1> Diversity</td>
+<input type=text name="rank_professionalism" size=1> Professionalism</td>
+<input type=text name="rank_fss" size=1> Fabled Service Skills (Customer Service)</td>
+<input type=text name="rank_supervisory_class" size=1> Supervisory Class (RAC)</td>
+<input type=text name="rank_financialplan" size=1> Financial Planning</td>
+<input type=text name="rank_selfmgmt" size=1> Self-Management Skills (Winner's  Edge)</td>
+<input type=text name="rank_grammar" size=1> Grammar Refresher</td>
+<input type=text name="rank_stress" size=1> Stress Management</td>
+<input type=text name="rank_present_skills" size=1> Presentation Skills</td>
+<input type=text name="rank_teambuild" size=1> Team Building</td></TR>
+<input type=text name="rank_prof_dress" size=1> Professional Dress for Women</td>
+<textarea cols=50 rows=8 name="courses_taken">Course Title, Location</textarea>              
+<textarea cols=50 rows=8 name="topics_for_me"></textarea>
+<textarea cols=50 rows=8 name="topics_for_employees"></textarea>
+<input type=radio name="mgr_encourage" value="verylittle"> To a very little extent.<BR>
+<input type=radio name="mgr_encourage" value="little"> To a little extent.<BR>
+<input type=radio name="mgr_encourage" value="some"> To some extent.<BR>
+<input type=radio name="mgr_encourage" value="great"> To a great extent.<BR>
+<input type=radio name="mgr_encourage" value="verygreat"> To a very great extent.<p>
+<input type=radio name="mgr_encourage_use" value="verylittle"> To a very little extent.<BR>
+<input type=radio name="mgr_encourage_use" value="little"> To a little extent.<BR>
+<input type=radio name="mgr_encourage_use" value="some"> To some extent.<BR>
+<input type=radio name="mgr_encourage_use" value="great"> To a great extent.<BR>
+<input type=radio name="mgr_encourage_use" value="verygreat"> To a very great extent.<BR>
+<input type=radio name="mgr_encourage_use" value="not_applicable"> Not applicable - no training received at PDC.
+<input type=radio name="ed_level" value="hs">High School / GED<BR>
+<input type=radio name="ed_level" value="assoc">Associates<BR>
+<input type=radio name="ed_level" value="bachelors">Bachelors<BR>
+<input type=radio name="ed_level" value="grad">Graduate<BR>
+<input type=text size=35 name="college_attended"></TD></tr>
+<input type=text size=35 name="degree_received"></TD></TR>
+<input type=text size=20 name="degree_major"></TD></TR><br>
+<input type=text size=4 name="year_degree_received"></TD>
+<input type=text size=35 name="certification"></td></tr>
+<input type=text size=8 name="date_certification_rcvd" value="mm/dd/yy"></td></tr>
+<input type=text size=35 name="certification"></td></tr>
+<input type=text size=8 name="date_certification_rcvd" value="mm/dd/yy"></td></tr>
+<input type=text size=35 name="certification"></td></tr>
+<input type=text size=8 name="date_certification_rcvd" value="mm/dd/yy"></td></tr>
+<input type=radio name="reimburse_knowledge" value="yes">Yes <br>
+<input type=radio name="reimburse_knowledge" value="no"> No <p>
+<input type=radio name="college_interest" value="yes"> Yes (if yes, continue to question 4)
+<input type=radio name="college_interest" value="No"> No - If no, please explain:<br>
+<input type=checkbox name="notpursue_timeconsume">time consuming<BR> 
+<input type=checkbox name="notpursue_family">family commitments<BR>
+<input type=checkbox name="notpursue_irrelevant">not relevant to my current job<BR>
+<input type=checkbox name="notpursue_costly">cost<BR>
+<input type=checkbox name="notpursue_already_have_degree">already have a degree, and do not wish to go back at this time
+<input type=text name="current_college" size=50><p>
+<input type=text name="current_degree" size=50><p> - OR - 
+<input type=checkbox name="not_currently_enrolled">Not applicable - I am not currently enrolled.
+<input type=radio name="course_level" value="assoc">Associates (2 year degree)<br>
+<input type=radio name="course_level" value="bachelors">Bachelors / Undergraduate (4 year degree)
+<input type=radio name="course_level" value="grad">Graduate   (MA, MS, or MBA)<br>
+<P>
+<li><B>I want to pursue a college degree because:</B><p>
+<textarea cols=50 rows=8 name="pursue_reasons"></textarea>
+<input type=checkbox name="accounting_interest">Accounting</td>
+<input type=checkbox name="finance_interest">Finance</td>
+<input type=checkbox name="taxaccount_interest">Tax Accounting	</td></tr>
+<input type=checkbox name="compsci_interest">Computer Science</td>
+<input type=checkbox name="officeadmin_interest">Office Administration</td>
+<input type=checkbox name="hr_interest">Human Resources</td></tr>
+<input type=checkbox name="genbus_interest">General Business</td>
+<input type=checkbox name="marketing_interest">Marketing</td>
+<input type=checkbox name="other_interest">
+<input type=text size=20 name="other_interest_description"></td></tr></table>
+<input type=radio name="classtime" value="afterfive">After 5:00 p.m.  Monday - Friday<br>
+<input type=radio name="classtime" value="saturday">Saturday<p>
+<textarea cols=50 rows=6 name="additional_comments"></textarea></ol>

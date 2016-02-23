@@ -1,0 +1,29 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.INIT:
+	echo "Copyright (c) 1992 by Roadnet Technologies, Inc."
+	echo "Copyright (c) 1992 by United Parcel Service of America."
+	echo "All rights reserved."
+	echo ""
+spike.o:	spike.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h /usr/include/errno.h /usr/include/sys/errno.h /usr/include/pwd.h /usr/include/sys/types.h /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h /usr/include/sys/select.h /usr/include/sys/time.h /usr/include/time.h /usr/include/sys/siginfo.h /usr/include/sys/machsig.h /usr/include/dirent.h /usr/include/sys/dirent.h /usr/include/signal.h /usr/include/sys/signal.h
+spike.o:	/usr/include/sys/unistd.h /usr/include/sys/procset.h /usr/include/utmp.h /usr/include/unistd.h /usr/include/sys/stat.h /usr/include/sys/wait.h /usr/include/sys/param.h /usr/include/sys/file.h /usr/include/sys/t_lock.h /usr/include/sys/machlock.h /usr/include/sys/dki_lkinfo.h /usr/include/sys/dl.h /usr/include/sys/sleepq.h /usr/include/sys/turnstile.h /usr/include/sys/pirec.h /usr/include/sys/mutex.h /usr/include/sys/rwlock.h /usr/include/sys/semaphore.h
+spike.o:	/usr/include/sys/condvar.h /usr/include/sys/ioctl.h daemon.h /opt/SUNWspro/SC4.0/include/CC/fstream.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h /usr/include/string.h /usr/include/stdlib.h /usr/include/fcntl.h /usr/include/sys/fcntl.h /usr/include/sys/termios.h /usr/include/sys/ttydev.h table.h /usr/include/malloc.h /opt/SUNWspro/SC4.0/include/CC/stream.h /opt/SUNWspro/SC4.0/include/CC/iomanip.h /opt/SUNWspro/SC4.0/include/CC/generic.h
+spike.o:	/opt/SUNWspro/SC4.0/include/CC/stdiostream.h 
+	CC    -c  spike.cc
+mstring.o:	/usr/include/errno.h /usr/include/sys/errno.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h mstring.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h /usr/include/string.h /usr/include/ctype.h /usr/include/stdlib.h 
+	CC    -c  mstring.cc
+spikeapp.o:	spike.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h /usr/include/errno.h /usr/include/sys/errno.h /usr/include/pwd.h /usr/include/sys/types.h /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h /usr/include/sys/select.h /usr/include/sys/time.h /usr/include/time.h /usr/include/sys/siginfo.h /usr/include/sys/machsig.h /usr/include/dirent.h /usr/include/sys/dirent.h /usr/include/signal.h /usr/include/sys/signal.h
+spikeapp.o:	/usr/include/sys/unistd.h /usr/include/sys/procset.h /usr/include/utmp.h /usr/include/unistd.h /usr/include/sys/stat.h /usr/include/sys/wait.h /usr/include/sys/param.h /usr/include/sys/file.h /usr/include/sys/t_lock.h /usr/include/sys/machlock.h /usr/include/sys/dki_lkinfo.h /usr/include/sys/dl.h /usr/include/sys/sleepq.h /usr/include/sys/turnstile.h /usr/include/sys/pirec.h /usr/include/sys/mutex.h /usr/include/sys/rwlock.h /usr/include/sys/semaphore.h
+spikeapp.o:	/usr/include/sys/condvar.h /usr/include/sys/ioctl.h daemon.h /opt/SUNWspro/SC4.0/include/CC/fstream.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h /usr/include/string.h /usr/include/stdlib.h /usr/include/fcntl.h /usr/include/sys/fcntl.h /usr/include/sys/termios.h /usr/include/sys/ttydev.h table.h /usr/include/malloc.h /opt/SUNWspro/SC4.0/include/CC/stream.h /opt/SUNWspro/SC4.0/include/CC/iomanip.h /opt/SUNWspro/SC4.0/include/CC/generic.h
+spikeapp.o:	/opt/SUNWspro/SC4.0/include/CC/stdiostream.h 
+	CC    -c  spikeapp.cc
+.BUILT_LAST_MAKE_RUN:
+spike:	/usr/lib/libdl.so.1 /usr/lib/libc.so /opt/SUNWspro/SC4.0/lib/libcx.a /usr/lib/libw.so /opt/SUNWspro/SC4.0/lib/libC_mtstubs.a /opt/SUNWspro/lib/libC.so /opt/SUNWspro/SC4.0/lib/libm.a /opt/SUNWspro/SC4.0/lib/libsunmath.a 
+	CC -I/opt/SUNWspro/SC4.0/include/CC -I. -DMAIN  -o a.out table.o mstring.o spike.o daemon.o spikeapp.o  -L. -L/opt/SUNWspro/SC4.0/include/lib
+	mv a.out spike
+table.o:	table.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h /usr/include/malloc.h /usr/include/string.h /opt/SUNWspro/SC4.0/include/CC/fstream.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h /opt/SUNWspro/SC4.0/include/CC/stream.h /opt/SUNWspro/SC4.0/include/CC/iomanip.h /opt/SUNWspro/SC4.0/include/CC/generic.h /opt/SUNWspro/SC4.0/include/CC/stdiostream.h 
+	CC    -c  table.cc
+daemon.o:	daemon.h /opt/SUNWspro/SC4.0/include/CC/fstream.h /opt/SUNWspro/SC4.0/include/CC/iostream.h /opt/SUNWspro/SC4.0/include/CC/rlocks.h /usr/include/stdio.h /usr/include/sys/feature_tests.h /usr/include/sys/va_list.h /usr/include/string.h /usr/include/stdlib.h /usr/include/errno.h /usr/include/sys/errno.h /usr/include/pwd.h /usr/include/sys/types.h /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h /usr/include/sys/select.h /usr/include/sys/time.h
+daemon.o:	/usr/include/time.h /usr/include/sys/siginfo.h /usr/include/sys/machsig.h /usr/include/dirent.h /usr/include/sys/dirent.h /usr/include/signal.h /usr/include/sys/signal.h /usr/include/sys/unistd.h /usr/include/sys/procset.h /usr/include/unistd.h /usr/include/fcntl.h /usr/include/sys/fcntl.h /usr/include/sys/stat.h /usr/include/sys/wait.h /usr/include/sys/file.h /usr/include/sys/t_lock.h /usr/include/sys/machlock.h /usr/include/sys/dki_lkinfo.h /usr/include/sys/dl.h
+daemon.o:	/usr/include/sys/sleepq.h /usr/include/sys/turnstile.h /usr/include/sys/param.h /usr/include/sys/pirec.h /usr/include/sys/mutex.h /usr/include/sys/rwlock.h /usr/include/sys/semaphore.h /usr/include/sys/condvar.h /usr/include/sys/ioctl.h /usr/include/sys/termios.h /usr/include/sys/ttydev.h 
+	CC    -c  daemon.cc

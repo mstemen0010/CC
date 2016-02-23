@@ -1,0 +1,1 @@
+CC -g -sb mstring.cc tableCell.cc tableRow.cc table.cc daemon.cc spike.cc spikeapp.cc -o spike

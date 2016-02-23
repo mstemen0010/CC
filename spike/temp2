@@ -1,0 +1,70 @@
+ F S      UID   PID  PPID  C PRI NI     ADDR     SZ    WCHAN    STIME TTY      TIME CMD
+19 T     root     0     0  0   0 SY 10416cf0      0            Apr 21 ?        0:00 sched
+ 8 S     root     1     0  0  41 20 50103338     55 50103508   Apr 21 ?        0:04 /etc/init -
+19 S     root     2     0  0   0 SY 50102cd8      0 10439ef4   Apr 21 ?        0:00 pageout
+19 S     root     3     0  0   0 SY 50102678      0 1043e174   Apr 21 ?       23:33 fsflush
+ 8 S     root   118     1  0  41 20 50155340    254 5007b066   Apr 21 ?        0:01 /usr/sbin/inetd -s
+ 8 S     root   264     1  0  41 20 50154ce0    178 50023af4   Apr 21 ?        0:00 /usr/lib/saf/sac -t 300
+ 8 S     root    99     1  0  41 20 50401980    248 5007af9e   Apr 21 ?        0:03 /usr/sbin/rpcbind
+ 8 S     root   101     1  0  41 20 50401320    207 5007af4e   Apr 21 ?        0:02 /usr/sbin/keyserv
+ 8 S     root   107     1  0  41 20 50400cc0    238 5007af76   Apr 21 ?        0:01 /usr/sbin/nis_cachemgr
+ 8 S     root   109     1  0  47 20 50400660    226 5007aed6   Apr 21 ?        0:00 /usr/sbin/kerbd
+ 8 S     root   172     1  0  41 20 50400000    330 5007ab8e   Apr 21 ?        0:00 /usr/lib/lpsched
+ 8 S     root   121     1  0  61 20 5047f988    217 5007aeae   Apr 21 ?        0:00 /usr/lib/nfs/statd
+ 8 S     root   123     1  0  73 20 5047f328    245 5007ae0e   Apr 21 ?        0:00 /usr/lib/nfs/lockd
+ 8 S     root   142     1  0  41 20 5047ecc8    291 5007acce   Apr 21 ?        0:00 /usr/lib/autofs/automountd
+ 8 S     root   199     1  0  41 20 5047e668    284 5007aa4e   Apr 21 ?        0:00 /usr/sbin/vold
+ 8 S     root   146     1  0  41 20 5047e008    275 5007aca6   Apr 21 ?        0:00 /usr/sbin/syslogd
+ 8 S     root   162     1  0  99 20 504f3990    376 504f3b60   Apr 21 ?        0:08 /usr/sbin/nscd -S passwd,yes -S gro
+ 8 S     root   153     1  0  41 20 504f3330    238 50023eb4   Apr 21 ?        0:03 /usr/sbin/cron
+ 8 S     root   210     1  0  40 20 504f2cd0    219 5007a90e   Apr 21 ?        0:02 /usr/sbin/nsr/nsrexecd -s unixtest-
+ 8 S     root   184     1  0  40 20 504f2670    105 5007abde   Apr 21 ?        0:00 /usr/lib/utmpd
+ 8 S     root   182   172  0  41 20 504f2010    185 5007abb6   Apr 21 ?        0:00 lpNet
+ 8 S     root   268   220  1  41 20 5054d998   1997 5007a346   Apr 21 ?       1043:24 /usr/openwin/bin/Xsun :0 -nobanner 
+ 8 S     root  3105     1  0  81 20 5054d338    296    bd7c4   Apr 24 ?        0:04 /opt/ns-home/admserv/ns-admin -d /o
+ 8 S     root   192     1  0  40 20 5054ccd8    276 5007ab16   Apr 21 ?        0:00 /opt/hpnp/bin/hpnpd
+ 8 S     root   220     1  0  51 20 5054c678    315 5007ba3e   Apr 21 ?        0:00 /usr/dt/bin/dtlogin
+ 8 S     root  3107  3106  0  40 20 5054c018    365 5007a81e   Apr 24 ?        0:04 /opt/ns-home/admserv/ns-admin -d /o
+ 8 S     root 13242   118  0  41 20 5064c660    224 5007a5c6 07:29:32 ?        0:00 bootpd
+ 8 S     root   265     1  0  61 20 50623340    187 5007b21e   Apr 21 console  0:00 /usr/lib/saf/ttymon -g -h -p ultra1
+ 8 S     root  8496  6189  0  50 20 50687330    147 50687500   May 01 pts/8    0:00 csh
+ 8 S     root   257     1  0  41 20 50622680    224 5007a45e   Apr 21 ?        0:00 /usr/lib/nfs/nfsd -a 16
+ 8 S     root   259     1  0  41 20 50622020    265 5007a4ae   Apr 21 ?        0:00 /usr/lib/nfs/mountd
+ 8 S     root   267   264  0  41 20 5064d980    188 5064db50   Apr 21 ?        0:00 /usr/lib/saf/ttymon
+ 8 S  mstemen   441   431  0  50 20 5064d320    453 5007a2f6   Apr 21 ?        0:01 clock -Wp 998 0 -Ws 132 56 -WP 8 12
+ 8 S  mstemen  1474  1472  0  40 20 50680668    808 502cc854   Apr 23 ?        0:00 dtfile -noview
+ 8 S  mstemen   439   431  0  40 20 5064c000    812 5007a0ee   Apr 21 ?        3:21 dtwm
+ 8 S  mstemen  1471   430  0  41 20 50681988    113 506819f8   Apr 23 ?        0:00 /bin/sh -c dtfile -noview
+ 8 S  mstemen   427     1  0  40 20 50681328    297 5007ba16   Apr 21 ?        0:18 /usr/dt/bin/dsdm
+ 8 S  mstemen  6189   443  0  40 20 50731340    148 50731510   Apr 29 pts/8    0:00 /bin/csh
+ 8 S  mstemen 12895 12894  0  41 20 506d6cd8   1743 50702206 17:42:47 pts/2    0:00 (dns helper)
+ 8 S  mstemen   447   442  0  52 20 50680008    163 506801d8   Apr 21 pts/2    0:01 -csh
+ 8 S     root   325   118  0  71 20 506af990    371 5007a076   Apr 21 ?        0:00 rpc.ttdbserverd
+ 8 S  mstemen 12894  2220  0  50 20 503be020   2308 5007a616 17:42:47 pts/2    0:32 netscapeb
+ 8 S  mstemen   442   431  0  51 20 506aecd0    705 5007a1de   Apr 21 ??       0:04 /usr/dt/bin/dtterm -session dta0005
+ 8 S  mstemen   443   431  0  40 20 506ae670    747 5007a04e   Apr 21 ??       0:36 dtterm -session dta0005H -sdtserver
+ 8 S  mstemen   431   425  0  50 20 506ae010    779 5007a31e   Apr 21 ?        0:05 /usr/dt/bin/dtsession
+ 8 S     root   376   220  0  64 20 506d7998    366 506d7a08   Apr 21 ?        0:00 /usr/dt/bin/dtlogin
+ 8 S  mstemen   425   393  0  44 20 506d7338    134 506d7508   Apr 21 ?        0:00 /bin/csh -c unsetenv _ PWD;        
+ 8 S     root  3099     1  0  91 20 5033a678    296    bd7c4   Apr 24 ?        0:04 /opt/ns-home/admserv/ns-admin -d /o
+ 8 S  mstemen   402   393  0  40 20 506d6678    227 5007bf8e   Apr 21 ?        0:00 /usr/openwin/bin/fbconsole
+ 8 S  mstemen   393   376  0  40 20 506d6018    197 506d6088   Apr 21 ?        0:00 /bin/ksh /usr/dt/bin/Xsession
+ 8 S     root   378     1  0  40 20 507319a0    227 5007a18e   Apr 21 ?        0:00 /usr/openwin/bin/fbconsole -d :0
+ 8 S     root  9025  9023  0  63 20 50622ce0    189 506ddd76   May 02 pts/5    0:11 vi newsFeed.java
+ 8 S  mstemen   430     1  0  40 20 50730680    482 5007a206   Apr 21 ?        0:09 /usr/dt/bin/ttsession -s
+ 8 S   daemon   358   118  0  41 20 50730020    248 50703ec6   Apr 21 ?        0:00 rpc.cmsd
+ 8 S  mstemen  5268   443  0  40 20 506af330    148 506af500   Apr 28 pts/9    0:00 /bin/csh
+ 8 S  mstemen 12626  3129  0  40 20 50687990    234 5007a576 16:25:02 pts/7    0:00 telnet www.corp.aerotek.com
+ 8 S     root  3106     1  0  75 20 50686cd0    302 50686ea0   Apr 24 ?        0:00 /opt/ns-home/admserv/ns-admin -d /o
+ 8 S  mstemen  1472  1471  0  51 20 502c1988    822 507034ee   Apr 23 ?        0:01 dtfile -noview
+ 8 S   nobody  9244     1  0  89 20 50686670    834 50686840   May 02 ?        0:00 ./ns-httpd -d /opt/ns-home/https-au
+ 8 O     root 13504  5268  1  51 20 5085acd0    106          09:56:48 pts/9    0:00 ps -elf
+ 8 S   nobody  9245  9244  0  40 20 50680cc8    873 5070303e   May 02 ?        0:45 ./ns-httpd -d /opt/ns-home/https-au
+ 8 S  mstemen  2220   447  0  61 20 5033b998    150 5070a356   Apr 23 pts/2    0:00 -csh
+ 8 S     root  9023     1  0  53 20 503be680    452 5007b106   May 02 pts/9    0:16 /usr/openwin/bin/xview/cmdtool -Wl 
+ 8 S     root  6895     1  0  51 20 50102018   1084 5007a54e   Apr 30 pts/9    0:50 /opt/aswedit/3.0/exe/sparc.solaris2
+ 8 S  mstemen  3129   443  0  40 20 502c1328    148 502c14f8   Apr 24 pts/7    0:00 /bin/csh
+ 8 S  mstemen  5909  5908  0  51 20 502c0008    186 507657e6   Apr 29 pts/4    0:00 vi /home/mstemen/.aliases
+ 8 S  mstemen  6021     1  0  51 20 503bf340    831 5007a5ee   Apr 29 ?        0:04 /usr/openwin/bin/iconedit
+ 8 S  mstemen  5908     1  0  50 20 5033acd8    345 5007a166   Apr 29 ?        0:00 xterm -T vi .aliases -n vial -bg bl
+ 8 S     root 12739  8496  0  40 20 50686010    234 5007a526 16:56:22 pts/8    0:00 telnet external
